@@ -1,37 +1,48 @@
 # 刘琦的项目档案
 
-方向：**机器人 / 控制 / 算法**。这里按项目资料时间整理已公开的代码、机械设计和研究记录，供简历读者查看具体实现与验证程度。
+**机器人 / 控制 / 算法 / 工程平台**。按项目资料时间整理具体工作、实现与可检查的结果。最近更新：**2026-11-10**。
+
+## 最近更新
+
+- **[Super Hand](https://github.com/Linhcry/super-hand-showcase)**：五指灵巧操作与机器人书写的当前技术展示，补齐架构、控制规划、模型卡、学习迭代和仿真录像。源码与设备标定保持私有。
+- **[冶炼分析平台 2.0.1](https://github.com/Linhcry/smelter-analytics-platform)**：新增原生 Qt 桌面源码、预测缓存及两组 ResNet 研究；图像与日期标签的验证结果保留原分母，默认仍为原稳健 PLS。
+- **[中文教学动画工作台](docs/teaching-video-workbench.md)**：约三分钟课程、Manim/三维/真实素材、自然男声与双语字幕；完整流程已独立重建验证。
+- **[海陆空机械宠物 P32C](https://github.com/Linhcry/modular-robot-pet/blob/main/docs/P32C进展-20261110.md)**：新增三态概览、质量与动力学诊断。完整快速步态、传动及真机性能仍在研发。
+- **[轮毂装堵与抓取学习](docs/automotive-wheel-embodied-intelligence.md)**：整理产线、机械分类供料、乱堆抓取与整箱连续任务各自的结果。
+- **[本科毕设](https://github.com/Linhcry/parcel-sorting-arm-design)**：当前分支移除整机和零件 STEP 原模型，保留结构图片、有限元图及设计摘要。
 
 ## 项目时间线
 
-| 时间依据 | 项目 | 主要工作与产出 | 当前证据 |
+| 资料时间 / 阶段 | 项目 | 主要工作 | 当前材料 |
 |---|---|---|---|
-| 本科期间 · 2024 年归档线索 | [太阳能小车机构与传动设计](https://github.com/Linhcry/solar-car-mechanical-design) | 主要负责整车方案、结构建模与参数匹配；保留车身迭代、凸轮机构与带公式的计算表。 | CAD 和计算资料 |
-| 2026-04 | [PVC 凝胶仿生鱼尾](docs/pvc-fish-tail.md) | 本科团队项目的柔性驱动技术路线与汇报材料整理。 | 团队项目简介 |
-| 2026-05—06 | [快递分拣机器人机械臂](https://github.com/Linhcry/parcel-sorting-arm-design) | 本科毕设：机械结构、伺服与传动选型、轴系校核和静力有限元分析。 | 设计与历史仿真 |
-| 2026-07 起 | [RoboCup T1 控制与强化学习](https://github.com/Linhcry/robocup-t1-control-lab) | 23 DoF 机器人运动控制、步态接入、PPO 实验与起身任务评测。 | 仿真研发 |
-| 2026-08 起 | [机器人舞蹈动作平台](https://github.com/Linhcry/robot-motion-platform) | 视频动捕、动作重定向、分阶段任务编排、运动诊断和多视图同步。 | 平台与算法适配 |
-| 2026-09 起 | [模块化机器人机械设计](https://github.com/Linhcry/modular-robot-pet) | SolidWorks 自动建模、模块接口、储物舱锁止、相机托架和载荷筛选。 | 设计候选与工程校核 |
-| 2026-09 起 | [五指灵巧手书写仿真](https://github.com/Linhcry/dexhand-calligraphy) | 题目识别、笔画规划、机械臂 IK、抓笔与接触反馈、书写质量评估。 | 仿真程序与测试 |
-| 2026-09 | [无人机应急运输联合优化](https://github.com/Linhcry/uav-disaster-optimization) | 异构无人机分配、路径定价、电池充电、通信约束和独立方案验证。 | 算法与建模程序 |
-| 2026-10 起 | [冶炼过程视觉与在线分析平台](https://github.com/Linhcry/smelter-analytics-platform) | 整合终点判别、铁含量回归、图像数据管理、训练评估与过程回放。 | 可运行平台；现场验收待数据 |
+| 本科期间 · 2024 年归档线索 | [太阳能小车](https://github.com/Linhcry/solar-car-mechanical-design) | 整车方案、结构、凸轮机构与参数匹配 | CAD、计算表 |
+| 2026-04 | [PVC 凝胶仿生鱼尾](docs/pvc-fish-tail.md) | 本科团队的柔性驱动路线与汇报 | 团队项目简介 |
+| 2026-05—06 | [分拣机械臂毕设](https://github.com/Linhcry/parcel-sorting-arm-design) | 机构、伺服/传动、轴系与静力分析 | 图片与设计摘要 |
+| 2026-07 起 | [RoboCup T1](https://github.com/Linhcry/robocup-t1-control-lab) | 23 DoF 控制、步态、PPO 与起身评测 | 仿真程序与实验记录 |
+| 2026-08 起 | [机器人舞蹈平台](https://github.com/Linhcry/robot-motion-platform) | 动捕、重定向、编排与诊断 | 平台与算法适配 |
+| 2026-09 起 | [机械宠物设计](https://github.com/Linhcry/modular-robot-pet) | SolidWorks 自动化、接口、三态机构与载荷/动力学筛选 | P32C 候选及检查记录 |
+| 2026-09 起 | [早期灵巧手书写](https://github.com/Linhcry/dexhand-calligraphy) → [Super Hand](https://github.com/Linhcry/super-hand-showcase) | OCR/笔画、IK、接触、RGB-D、多阶段工具操作及学习 | 历史程序、当前技术展示 |
+| 2026-09 | [无人机联合优化](https://github.com/Linhcry/uav-disaster-optimization) | 分配、路径、充电、通信与独立验证 | 算法与建模程序 |
+| 2026-10 起 | [冶炼分析平台](https://github.com/Linhcry/smelter-analytics-platform) | 图像回归、数据管理、训练评估、Qt 桌面和现场接口 | 2.0.1 源码；现场指标待验证 |
+| 2026-10 | [轮毂与抓取仿真](docs/automotive-wheel-embodied-intelligence.md) | 装堵、机械供料、接触恢复、PPO/MPC | 仿真证据摘要，代码私有 |
+| 2026-10—11 | [教学动画与制作工作台](docs/teaching-video-workbench.md) | 文案、真实素材、配音字幕、Manim、三维与合成 | 已交付课程、可复用私有工程 |
 
-时间来自原项目 Git 记录、说明书或实验/设计记录；只知道阶段的条目按月份标注。本科小车日期来自归档材料，具体赛事时间仍可补充。代码现在整理上传，提交日期采用实际日期。
+时间来自原项目记录、说明书或实验材料；阶段时间不等于当前 Git 提交日期。
 
-## 建议阅读顺序
+## 阅读入口
 
-算法与控制岗位先看 **T1 控制 → 灵巧手 → 无人机优化**；机器人平台岗位可看 **舞蹈动作平台 → 冶炼分析平台**；机电岗位可看 **分拣机械臂 → 太阳能小车 → 模块化机器人**。每个仓库说明问题、程序入口、实际产出和验证范围。
+灵巧操作与机器人算法先看 **Super Hand → T1 → 轮毂抓取**；平台开发可看 **冶炼桌面程序 → 机器人舞蹈 → 视频工作台**；机械设计可看 **机械宠物 → 分拣机械臂 → 太阳能小车**。
 
-## 与原 GitHub 仓库的关系
+## 仓库关系
 
-| 原仓库 | 来源与用途 |
+| 研发仓库 | 展示 / 公开入口 |
 |---|---|
-| 26DigitalInfrastructure | 培训仓库 fork；个人工作在 liu-qi，公开代码已单独归档到 T1 控制项目 |
-| Robot-Dance | 原舞蹈研发仓库，继续保留原有可见性；公开平台代码在 robot-motion-platform |
-| Robotcup-super-hand | 原灵巧手研发仓库，继续保留原有可见性；公开程序在 dexhand-calligraphy |
-| coff-Dream | 咖啡管理项目 fork，作为网页构建与工程组织参考 |
-| dexrobot_mujoco / dexrobot_isaac / dexrobot_urdf | DexRobot 上游依赖 fork，模型与仿真基础，不作为个人原创算法项目 |
+| Robotcup-super-hand | 当前技术展示 super-hand-showcase；dexhand-calligraphy 为较早程序 |
+| Robot-Dance | robot-motion-platform |
+| 26DigitalInfrastructure 的 liu-qi 工作 | robocup-t1-control-lab |
+| mechanical-pet-design-records | 完整设计版本与 Release 私有归档；modular-robot-pet 为公开设计概览与历史自有程序 |
+| automotive-wheel-embodied-intelligence | 研发快照私有；本页公开任务和结果摘要 |
+| teaching-video-workbench | 可复用源码和课程 Release 私有；本页公开效果与方法 |
+| dexrobot_mujoco / dexrobot_isaac / dexrobot_urdf | 上游依赖 fork，单独说明来源 |
 
-小说、低完成度小样例、安装包、个人证明材料和原始工业数据没有加入这组公开项目。完整研发工作区和原有私有仓库继续保留。
-
-本次源码整理的测试范围见 [验证记录](VALIDATION.md)。
+原始工业数据、权重、设备标定、个人证明和不适合公开的研发资产未随本页公开。验证范围见 [记录](VALIDATION.md)。
